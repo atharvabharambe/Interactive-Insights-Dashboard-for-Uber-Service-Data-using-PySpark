@@ -1,0 +1,51 @@
+Gold_layer_table:
+
+SELECT
+  trip_date,
+  trip_hour,
+  total_trips,
+  average_fare,
+  average_distance,
+  total_fare
+FROM data_ingestion2.schema1.uber_gold
+
+-------------------------------------------------------------------------------------------------------------------
+Total Trips Over Time:
+
+SELECT trip_date, total_trips
+FROM data_ingestion2.schema1.uber_gold
+ORDER BY trip_date
+
+--------------------------------------------------------------------------------------------------------------------
+
+Average Fare Over Time:
+
+SELECT trip_date, average_fare
+FROM data_ingestion2.schema1.uber_gold
+ORDER BY trip_date
+
+------------------------------------------------------------------------------------------------------------------
+
+Demand Heatmap:
+
+SELECT pickup_latitude, pickup_longitude, COUNT(*) as trip_count
+FROM data_ingestion2.schema1.uber_silver_snapshot
+GROUP BY pickup_latitude, pickup_longitude
+ORDER BY trip_count DESC
+
+-------------------------------------------------------------------------------------------------------------------
+
+Distance vs. Fare Analysis:
+
+SELECT average_distance, total_fare
+FROM data_ingestion2.schema1.uber_gold
+WHERE average_distance IS NOT NULL
+
+-------------------------------------------------------------------------------------------------------------------
+
+Hourly Trip Demand:
+
+SELECT trip_hour, SUM(total_trips) as trips_per_hour
+FROM data_ingestion2.schema1.uber_gold
+GROUP BY trip_hour
+ORDER BY trip_hour
