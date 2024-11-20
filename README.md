@@ -9,7 +9,7 @@ This project not only builds technical expertise but also aligns with industry s
  ### Step 1: Data Ingestion 
 - Objective: Import Uber data into the Databricks environment for processing.
 - The Uber dataset is uploaded to the Volume in our specified Schema in a CSV format and imported into Azure Databricks.
-- A new Notebook is created to the Data_ingestion_2 Workspace. 
+- A new Notebook is created to the `Data_ingestion_2` Workspace and a Cluster named `Atharva Bharambe's Cluster` needs to be started.
 ### Step 2: Data Transformation
 
 - Objective: Clean, process, and organize data into structured layers for analysis.
