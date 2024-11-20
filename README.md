@@ -27,7 +27,7 @@ Layers Created:
 
 
 ### Step 3: Query Creation
-- Objective: Write SQL queries to extract key insights from the processed data.
+- Objective: In SQL Editor the below seperate tables are created and saved in the same workspace to extract key insights from the processed data.
 - Queries are saved for various analysis goals:
 
     - Total Trips Over Time: 
