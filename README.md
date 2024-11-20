@@ -1,4 +1,9 @@
 
+# Interactive Insights Dashboard for Uber Service Data using PySpark
+
+This project is positioned as an industry-level initiative, showcasing advanced skills in data visualization and big data handling on Azure Databricks. It has been undertaken under the esteemed guidance of Dadasaheb Hinge, whose mentorship provided invaluable direction.
+
+This project not only builds technical expertise but also aligns with industry standards, offering a strong foundation for data-driven decision-making in ride-hailing services. Let me know if further enhancements or details are required!
 ## Data Flow ➡
 
  ### Step 1: Data Ingestion 
