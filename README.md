@@ -57,3 +57,5 @@ Layers Created:
     - A time-series section for total trips and average fares.
     - A geographic section for demand hotspots.
     - Behavioral insights into hourly demand patterns.
+## Outputs: 
+![Screenshot](https://github.com/atharvabharambe/Interactive-Insights-Dashboard-for-Uber-Service-Data-using-PySpark/blob/main/Outputs/Dashboard.png)
